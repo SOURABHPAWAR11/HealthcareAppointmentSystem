@@ -1,0 +1,51 @@
+DoctorID,FirstName,LastName,Specialty,ClinicID,AvailableSlots
+1,Doctor1,Last1,Neurology,7,19
+2,Doctor2,Last2,Pediatrics,1,24
+3,Doctor3,Last3,Pediatrics,1,11
+4,Doctor4,Last4,Neurology,9,23
+5,Doctor5,Last5,Orthopedics,7,28
+6,Doctor6,Last6,Orthopedics,1,12
+7,Doctor7,Last7,Pediatrics,8,20
+8,Doctor8,Last8,Pediatrics,5,27
+9,Doctor9,Last9,Cardiology,8,18
+10,Doctor10,Last10,"General Practice",4,26
+11,Doctor11,Last11,Cardiology,4,11
+12,Doctor12,Last12,Pediatrics,2,18
+13,Doctor13,Last13,Orthopedics,2,18
+14,Doctor14,Last14,"General Practice",3,22
+15,Doctor15,Last15,Cardiology,2,29
+16,Doctor16,Last16,Orthopedics,3,12
+17,Doctor17,Last17,"General Practice",6,29
+18,Doctor18,Last18,Cardiology,9,21
+19,Doctor19,Last19,Pediatrics,5,26
+20,Doctor20,Last20,"General Practice",10,13
+21,Doctor21,Last21,Cardiology,8,20
+22,Doctor22,Last22,Pediatrics,5,14
+23,Doctor23,Last23,Orthopedics,4,29
+24,Doctor24,Last24,"General Practice",5,20
+25,Doctor25,Last25,Neurology,8,29
+26,Doctor26,Last26,Pediatrics,9,18
+27,Doctor27,Last27,Orthopedics,10,26
+28,Doctor28,Last28,Neurology,9,23
+29,Doctor29,Last29,Orthopedics,3,19
+30,Doctor30,Last30,Pediatrics,5,17
+31,Doctor31,Last31,Orthopedics,2,24
+32,Doctor32,Last32,Cardiology,6,18
+33,Doctor33,Last33,Pediatrics,10,20
+34,Doctor34,Last34,Orthopedics,8,22
+35,Doctor35,Last35,"General Practice",7,21
+36,Doctor36,Last36,"General Practice",10,25
+37,Doctor37,Last37,Cardiology,2,22
+38,Doctor38,Last38,Orthopedics,4,26
+39,Doctor39,Last39,Cardiology,10,15
+40,Doctor40,Last40,Orthopedics,4,25
+41,Doctor41,Last41,"General Practice",3,17
+42,Doctor42,Last42,Cardiology,6,18
+43,Doctor43,Last43,Pediatrics,9,10
+44,Doctor44,Last44,Pediatrics,9,22
+45,Doctor45,Last45,Pediatrics,6,14
+46,Doctor46,Last46,Pediatrics,9,27
+47,Doctor47,Last47,Orthopedics,7,18
+48,Doctor48,Last48,Cardiology,9,11
+49,Doctor49,Last49,"General Practice",3,21
+50,Doctor50,Last50,Neurology,4,12
