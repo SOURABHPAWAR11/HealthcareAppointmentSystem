@@ -1,17 +1,10 @@
-select * from patients ; /*500 *rows retuns*/
-select * from doctors /*50 *rows retuns*/
-select * from appointments; /*1000 rows return*/
-select * from clinics; /*10 rows return*/
-
-
-
--- Creating the Healthcare Appointment System Database
+select * from patients ; 
+select * from doctors;
 DROP DATABASE IF EXISTS HealthcareDB;
 CREATE DATABASE HealthcareDB;
 USE HealthcareDB;
 
--- Creating Tables
--- Patients: Stores patient information
+--Tables
 CREATE TABLE Patients (
     PatientID INT PRIMARY KEY AUTO_INCREMENT,
     FirstName VARCHAR(50) NOT NULL,
@@ -21,7 +14,6 @@ CREATE TABLE Patients (
     Address VARCHAR(200)
 );
 
--- Doctors: Stores doctor information
 CREATE TABLE Doctors (
     DoctorID INT PRIMARY KEY AUTO_INCREMENT,
     FirstName VARCHAR(50) NOT NULL,
@@ -32,7 +24,6 @@ CREATE TABLE Doctors (
     CONSTRAINT CHK_AvailableSlots CHECK (AvailableSlots >= 0)
 );
 
--- Clinics: Stores clinic information
 CREATE TABLE Clinics (
     ClinicID INT PRIMARY KEY AUTO_INCREMENT,
     ClinicName VARCHAR(100) NOT NULL,
@@ -40,7 +31,6 @@ CREATE TABLE Clinics (
     Phone VARCHAR(15)
 );
 
--- Appointments: Stores appointment details
 CREATE TABLE Appointments (
     AppointmentID INT PRIMARY KEY AUTO_INCREMENT,
     PatientID INT,
@@ -53,7 +43,7 @@ CREATE TABLE Appointments (
     FOREIGN KEY (ClinicID) REFERENCES Clinics(ClinicID)
 );
 
--- Create Index for Performance
+--Index
 CREATE INDEX IDX_Appointments_AppointmentDate ON Appointments(AppointmentDate);
 
 -- Generating Sample Data
@@ -147,7 +137,7 @@ BEGIN
 END //
 DELIMITER ;
 
--- Create Stored Procedure for Appointment Summary
+-- Stored Procedure for Appointment Summary
 DELIMITER //
 CREATE PROCEDURE GetAppointmentSummary(
     IN p_StartDate DATE,
@@ -166,7 +156,7 @@ BEGIN
 END //
 DELIMITER ;
 
--- Create View for Patient Visit History
+--View for Patient Visit History
 CREATE VIEW PatientVisitHistory AS
 SELECT 
     p.PatientID,
